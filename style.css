@@ -144,3 +144,17 @@ section{
     transform: translate(-50%);
 }
 
+.about .about-content{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
