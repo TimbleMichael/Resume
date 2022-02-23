@@ -15,8 +15,15 @@
 .navbar{
     position: fixed;
     width: 100%;
+    z-index: 999;
     padding: 30px 0;
     font-family: 'Ubuntu',sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson;
 }
 
 .navbar .max-width{
@@ -33,6 +40,11 @@
 
 .navbar .logo a span{
     color: crimson;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span{
+    color: #fff;
 }
 
 .navbar .menu li {
@@ -51,6 +63,11 @@
 .navbar .menu li a:hover{
     color: crimson;
 }
+
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
 .home{
     display: flex;
     background: url("https://wallpaperaccess.com/full/1811402.jpg") no-repeat center;
@@ -84,3 +101,46 @@
     font-size: 40px;
     margin: 5px 0;
 }
+
+
+section{
+    padding: 100px 0;
+}
+
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translate(-50%);
+}
+
+.about .title::after{
+    content: "who I am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translate(-50%);
+}
+
