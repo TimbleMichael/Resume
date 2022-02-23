@@ -6,10 +6,17 @@
     text-decoration: none;
 }
 
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
 .navbar{
     position: fixed;
     width: 100%;
-    background: #1F51FF;
+    padding: 15px 0;
+    background: crimson;
     font-family: 'Ubuntu',sans-serif;
 }
 
@@ -33,4 +40,25 @@
 
 .navbar .menu li a{
     color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+.home{
+    display: flex;
+    background: url("https://wallpaperaccess.com/full/1811402.jpg") no-repeat center;
+    background-size: 2000px 2000px;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content{
+    
 }
