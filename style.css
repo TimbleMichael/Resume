@@ -144,17 +144,88 @@ section{
     transform: translate(-50%);
 }
 
-.about .about-content{
-    display: flex;
-    flex-wrap:wrap;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .about .about-content .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
-
+    text-align: center;
 }
+
+
+.about .about-content .right p{
+    text-align: justify;
+}
+
+.resume{
+    font-family: 'Poppins', sans-serif;
+}
+
+.resume .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    margin-top: -125px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.resume .resume-content .right a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.resume .resume-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+
+.resume .resume-content .right a{
+    text-align: center;
+    display:block;
+    margin: auto;
+}
+
+.experience{
+    font-family: 'Poppins', sans-serif;
+}
+
+.experience .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    margin-top: -100px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.experience .text-ex1{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+    color: crimson;
+}
+
+.experience .subtext-ex1{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+
 
