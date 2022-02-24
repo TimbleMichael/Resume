@@ -227,5 +227,36 @@ section{
     text-align: center;
 }
 
+.education{
+    font-family: 'Poppins', sans-serif;
+}
+
+.education .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    margin-top: -100px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.education .text-ed2{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+    color: crimson;
+}
+
+.education .subtext-ed2{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: -10px;
+    text-align: center;
+}
+
 
 
