@@ -38,6 +38,7 @@
     background: crimson;
 }
 
+
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -80,6 +81,13 @@
     color: #fff;
 }
 
+                                                             /* Styling the 'Home' section */
+
+/* Setting the background from an image link from Google. 
+   Setting the 'background-size' (length and width) and the 'vertical height' (vh)
+   Setting the 'font' 
+   Set it as a block-level conatiner using 'flex'
+*/                                                          
 .home{
     display: flex;
     background: url("https://wallpaperaccess.com/full/1811402.jpg") no-repeat center;
@@ -94,30 +102,36 @@
     margin: auto 0 auto 40px;
 }
 
+/* Within: home -> home-cotent -> text-1, setting the font-size */
 .home .home-content .text-1{
     font-size: 27px;
 }
 
+/* Within: home -> home-cotent -> text-2, setting the font-size, weight and setting the margin */
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
 
+/* Within: home -> home-cotent -> text-2 --> span, using the <span> tag to color only a specific part of the text, in this case 'Michael' */
 .home .home-content .text-2 span{
     color: crimson;
     font-weight: 500;
 }
 
+/* Within: home -> home-cotent -> text-3, setting the font-size, and setting the margin */
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
 }
 
+/* Setting the spacing between each of the seciton i.e. 'About', 'Resume', 'Experience', 'Educaiton', 'Contact' */
 section{
     padding: 100px 0;
 }
 
+/* Setting the font for the content in each section */
 .about, 
 .resume,
 .experience,
@@ -126,6 +140,9 @@ section{
     font-family: 'Poppins', sans-serif;
 }
 
+                                                                    /* Styling the 'About' section */
+                                                                    
+/* Setting the font for the title */
 .about .title{
     position: relative;
     text-align: center;
@@ -136,6 +153,7 @@ section{
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* Underlining the title */
 .about .title::before{
     content: "";
     position: absolute;
@@ -147,6 +165,7 @@ section{
     transform: translate(-50%);
 }
 
+/* Inserting 'who i am' within the line */
 .about .title::after{
     content: "who I am";
     position: absolute;
@@ -159,6 +178,7 @@ section{
     transform: translate(-50%);
 }
 
+/* Aligning the 'I'm Timble' part in the centre and setting the margins */
 .about .about-content .text{
     font-size: 25px;
     font-weight: 600;
@@ -166,10 +186,14 @@ section{
     text-align: center;
 }
 
+/* Justified paragraph, 'p', alignment */
 .about .about-content .right p{
     text-align: justify;
 }
 
+                                                                /* Styling the 'Resume' section */
+
+ /* Setting the font of the title */
 .resume .title{
     position: relative;
     text-align: center;
@@ -181,6 +205,15 @@ section{
     font-family: 'Ubuntu', sans-serif;
 }
 
+ /* Setting the download CV button 
+    Setting the display as inline-block which can be formatted as inline element and apply width/height properties.
+    
+    Inline element i.e. <span>
+    Block element i.e. <p>, <div> - seperation between elements
+
+    The download button will have (initially) red background (background) and white text (color).
+    There will be a 0.3 second delay.
+ */
 .resume .resume-content .right a{
     display: inline-block;
     background: crimson;
@@ -193,17 +226,22 @@ section{
     transition: all 0.3s ease;
 }
 
+/* Setting the behaviour of what happend when you hover over the 'Download CV' button.
+   After the 0.3 second delay the text will turn red (color) and the background will be empty
+*/
 .resume .resume-content .right a:hover{
     color: crimson;
     background: none;
 }
 
+/* Aligning the text 'Download CV' in the center */
 .resume .resume-content .right a{
     text-align: center;
     display:block;
     margin: auto;
 }
 
+ /* Setting the  font and margins for the titles of each section*/
 .experience .title,
 .education .title,
 .contact .title{
@@ -217,6 +255,9 @@ section{
     font-family: 'Ubuntu', sans-serif;
 }
 
+                                                                   /* Styling the 'Experience' section */
+
+ /* Setting the font/size/margins for the 'name of the companies' */                                                                   
 .experience .text-ex1{
     font-size: 25px;
     font-weight: 600;
@@ -226,6 +267,7 @@ section{
     color: crimson;
 }
 
+/* Setting the font/size/margins for the 'position/location/start-end dates' */  
 .experience .subtext-ex1{
     font-size: 18px;
     font-weight: 600;
@@ -234,7 +276,9 @@ section{
     text-align: center;
 }
 
+                                                                    /* Styling the 'Education' section */
 
+ /* Setting the font/size/margins for the 'name of the degree' */                                                                                                        
 .education .text-ed2{
     font-size: 25px;
     font-weight: 600;
@@ -243,6 +287,7 @@ section{
     color: crimson;
 }
 
+/* Setting the font/size/margins for the 'university name/location/start-end dates' */  
 .education .subtext-ed2{
     font-size: 18px;
     font-weight: 600;
@@ -251,6 +296,9 @@ section{
     text-align: center;
 }
 
+                                                                    /* Styling the 'Contact' section */  
+
+/* Setting the font/size of the 'head' i.e. 'Name', 'Address' and 'email'  */                                                             
 .contact .head{
     font-size: 20px;
     font-weight: 600;
@@ -259,6 +307,7 @@ section{
     color: crimson;
 }
 
+/* Setting the font/size of the 'sub-title' i.e. 'timble michael', 'QLD Aus' and 'email adress'  */   
 .contact .sub-title{
     font-size: 18px;
     font-weight: 500;
@@ -266,6 +315,7 @@ section{
     text-align: center;
 }
 
+/* Setting the alignment of the icons  */   
 .contact .icons{
     font-size: 18px;
     font-weight: 500;
