@@ -227,11 +227,13 @@ section{
     text-align: center;
 }
 
-.education{
+.education,
+.contact{
     font-family: 'Poppins', sans-serif;
 }
 
-.education .title{
+.education .title,
+.contact .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -258,5 +260,24 @@ section{
     text-align: center;
 }
 
-
-
+.contact .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translate(-50%);
+}
+.contact .title::after{
+    content: "get in touch";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translate(-50%);
+}
