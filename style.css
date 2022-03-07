@@ -105,6 +105,7 @@
 /* Within: home -> home-cotent -> text-1, setting the font-size */
 .home .home-content .text-1{
     font-size: 27px;
+    text-align: center;
 }
 
 /* Within: home -> home-cotent -> text-2, setting the font-size, weight and setting the margin */
