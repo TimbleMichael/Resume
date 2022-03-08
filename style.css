@@ -48,8 +48,7 @@
 .navbar .logo a{
     color: #fff;
     font-size: 35px;
-    font-weight: 600;
-    margin-left: -260px;
+    font-weight: 600; 
 }
 
 .navbar .logo a span{
@@ -66,10 +65,6 @@
     display: inline-block;
 }
 
-.navbar .menu{
-    margin-right: -260px;
-}
-
 .navbar .menu li a{
     color: #fff;
     font-size: 18px;
@@ -84,6 +79,13 @@
 
 .navbar.sticky .menu li a:hover{
     color: #fff;
+}
+
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
 }
 
                                                              /* Styling the 'Home' section */
@@ -328,3 +330,16 @@ section{
     text-align: center;
 }
 
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: black;
+    }
+}
