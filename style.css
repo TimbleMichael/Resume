@@ -38,7 +38,6 @@
     background: crimson;
 }
 
-
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -97,8 +96,8 @@
 */                                                          
 .home{
     display: flex;
-    background: url("https://wallpaperaccess.com/full/1811402.jpg") no-repeat center;
-    background-size: 2000px 2000px;
+    background: url("https://img.besthqwallpapers.com/Uploads/30-11-2019/113955/gray-arrows-material-design-abstract-arrows-creative-geometric-shapes.jpg") no-repeat center;
+    background-size: 2580px 1900px;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -106,7 +105,8 @@
 }
 
 .home .max-width{
-    margin: auto 0 auto 40px;
+    margin: auto 0px auto 495px;
+    padding: 282px 0;
 }
 
 /* Within: home -> home-cotent -> text-1, setting the font-size */
@@ -117,8 +117,7 @@
 /* Within: home -> home-cotent -> text-2, setting the font-size, weight and setting the margin */
 .home .home-content .text-2{
     font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
+    font-weight: 600;   
 }
 
 /* Within: home -> home-cotent -> text-2 --> span, using the <span> tag to color only a specific part of the text, in this case 'Michael' */
@@ -129,9 +128,25 @@
 
 /* Within: home -> home-cotent -> text-3, setting the font-size, and setting the margin */
 .home .home-content .text-3{
-    font-size: 40px;
-    margin: 5px 0;
+    font-size: 40px;      
 }
+
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid crimson;
+}
+
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+}
+
 
 /* Setting the spacing between each of the seciton i.e. 'About', 'Resume', 'Experience', 'Educaiton', 'Contact' */
 section{
@@ -139,8 +154,7 @@ section{
 }
 
 /* Setting the font for the content in each section */
-.about, 
-.resume,
+.about,
 .experience,
 .education,
 .contact {
@@ -161,7 +175,7 @@ section{
 }
 
 /* Underlining the title */
-.about .title::before{
+.about .title:before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -173,7 +187,7 @@ section{
 }
 
 /* Inserting 'who i am' within the line */
-.about .title::after{
+.about .title:after{
     content: "who I am";
     position: absolute;
     bottom: -12px;
@@ -198,57 +212,6 @@ section{
     text-align: justify;
 }
 
-                                                                /* Styling the 'Resume' section */
-
- /* Setting the font of the title */
-.resume .title{
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 4px;
-    margin-top: -125px;
-    padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
- /* Setting the download CV button 
-    Setting the display as inline-block which can be formatted as inline element and apply width/height properties.
-    
-    Inline element i.e. <span>
-    Block element i.e. <p>, <div> - seperation between elements
-
-    The download button will have (initially) red background (background) and white text (color).
-    There will be a 0.3 second delay.
- */
-.resume .resume-content .right a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 20px;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-
-/* Setting the behaviour of what happend when you hover over the 'Download CV' button.
-   After the 0.3 second delay the text will turn red (color) and the background will be empty
-*/
-.resume .resume-content .right a:hover{
-    color: crimson;
-    background: none;
-}
-
-/* Aligning the text 'Download CV' in the center */
-.resume .resume-content .right a{
-    text-align: center;
-    display:block;
-    margin: auto;
-}
-
- /* Setting the  font and margins for the titles of each section*/
 .experience .title,
 .education .title,
 .contact .title{
@@ -330,16 +293,56 @@ section{
     text-align: center;
 }
 
-@media (max-width: 991px){
+@media (max-width: 950px){
     .max-width{
-        padding: 0 50px;
+        padding: 0 75px;
     }
+}
+
+@media (max-width: 1329px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 990px){
+    .home .max-width{
+        padding: 0 75px;
+    }
+
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+
     .navbar .menu{
         position: fixed;
         height: 100vh;
         width: 100%;
-        left: 0;
+        left: -100%;
         top: 0;
         background: black;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
     }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 25px 0;
+        font-size: 25px;
+    }
+
 }
