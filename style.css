@@ -96,8 +96,8 @@
 */                                                          
 .home{
     display: flex;
-    background: url("https://img.besthqwallpapers.com/Uploads/30-11-2019/113955/gray-arrows-material-design-abstract-arrows-creative-geometric-shapes.jpg") no-repeat center;
-    background-size: 2580px 1900px;
+    background: url("https://img.besthqwallpapers.com/Uploads/5-8-2019/100500/black-lines-4k-material-design-creative-geometric-shapes.jpg") no-repeat center;
+    background-size: 2500px 1900px;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -122,13 +122,17 @@
 
 /* Within: home -> home-cotent -> text-2 --> span, using the <span> tag to color only a specific part of the text, in this case 'Michael' */
 .home .home-content .text-2 span{
-    color: crimson;
     font-weight: 500;
 }
 
 /* Within: home -> home-cotent -> text-3, setting the font-size, and setting the margin */
 .home .home-content .text-3{
     font-size: 40px;      
+}
+
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 450;      
 }
 
 .home .home-content a{
