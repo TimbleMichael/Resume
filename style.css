@@ -105,8 +105,7 @@
 }
 
 .home .max-width{
-    margin: auto 0px auto 495px;
-    padding: 282px 0;
+    margin: auto 0px auto 415px;
 }
 
 /* Within: home -> home-cotent -> text-1, setting the font-size */
@@ -161,7 +160,8 @@ section{
 .about,
 .experience,
 .education,
-.contact {
+.contact,
+footer {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -295,6 +295,16 @@ section{
     font-weight: 500;
     margin-bottom: 10px;
     text-align: center;
+}
+
+footer{
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+}
+
+footer span a{
+    color: crimson;
 }
 
 @media (max-width: 950px){
