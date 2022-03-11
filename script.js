@@ -12,5 +12,14 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
+    var typed =  new Typed(".typing", {
+        strings: ["Software Engineering", "Python", "JavaScript", "HTML", "Data Science"],
+        typeSpeed: 100,
+        backspeed: 60,
+        loop: true
+    })
+    
+    
 
-});
+
+})
