@@ -105,10 +105,9 @@
 
                                                                         /* Styling the 'Home' section */
 
-/* Setting the background from an image link from Google. 
-   Setting the 'background-size' (length and width) and the 'vertical height' (vh)
-   Setting the 'font' 
-   Set it as a block-level conatiner using 'flex'
+/* Setting the 'Home' section as a 'flex' container.
+   Setting the background image, size, text font and text colour.
+   Wanted the landing page to be filled with the bakground hence, vh (vertical height)
 */                                                          
 .home{
     display: flex;
@@ -120,36 +119,42 @@
     font-family: 'Ubuntu',sans-serif;
 }
 
+/* Setting the max width for the 'home' section.
+   Only wanted margin to be set in the left-right direction.
+   Auto-margin was used to center the container.
+*/
 .home .max-width{
     margin: auto 0px auto 415px;
 }
 
-/* Within: home -> home-cotent -> text-1, setting the font-size */
+/* Setting for "Hi, my name is", home (parent container) -> home-cotent (sub-container) -> text-1 (child of the sub-container)
+*/
 .home .home-content .text-1{
     font-size: 27px;
 }
 
-/* Within: home -> home-cotent -> text-2, setting the font-size, weight and setting the margin */
+/* Setting for "Timble Michael", home -> home-cotent -> text-2
+*/
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;   
 }
 
-/* Within: home -> home-cotent -> text-2 --> span, using the <span> tag to color only a specific part of the text, in this case 'Michael' */
-.home .home-content .text-2 span{
-    font-weight: 500;
-}
-
-/* Within: home -> home-cotent -> text-3, setting the font-size, and setting the margin */
+/* Setting for "And I am learning", home -> home-cotent -> text-3, setting the font-size
+*/
 .home .home-content .text-3{
     font-size: 40px;      
 }
 
+/* Setting the colour and fonts for the items that I am "learning" in the list
+*/
 .home .home-content .text-3 span{
     color: crimson;
     font-weight: 450;      
 }
 
+/* "Download CV" button 
+*/
 .home .home-content a{
     display: inline-block;
     background: crimson;
@@ -161,18 +166,22 @@
     border: 1px solid crimson;
 }
 
+/* Colour change for "Download CV" button when hovering over it 
+*/
 .home .home-content a:hover{
     color: crimson;
     background: none;
 }
 
 
-/* Setting the spacing between each of the seciton i.e. 'About', 'Resume', 'Experience', 'Educaiton', 'Contact' */
+/* Spacing in between each section 
+*/
 section{
     padding: 100px 0;
 }
 
-/* Setting the font for the content in each section */
+/* Setting the font for the content in each section 
+*/
 .about,
 .experience,
 .education,
@@ -181,7 +190,7 @@ footer {
     font-family: 'Poppins', sans-serif;
 }
 
-                                                                    /* Styling the 'About' section */
+                                                                        /* Styling the 'About' section */
                                                                     
 /* Setting the font for the title */
 .about .title{
