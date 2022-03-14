@@ -191,19 +191,21 @@ footer {
 }
 
                                                                         /* Styling the 'About' section */
-                                                                    
-/* Setting the font for the title */
+                                                                                                                                   
+/* Setting the font, position, and alignment for the title 
+*/
 .about .title{
     position: relative;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 25px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* Underlining the title */
+/* Putting in a black line underneath "About me" title 
+*/
 .about .title:before{
     content: "";
     position: absolute;
@@ -215,7 +217,8 @@ footer {
     transform: translate(-50%);
 }
 
-/* Inserting 'who i am' within the line */
+/* Putting in 'who I am' on top of the black line
+*/
 .about .title:after{
     content: "who I am";
     position: absolute;
@@ -228,7 +231,8 @@ footer {
     transform: translate(-50%);
 }
 
-/* Aligning the 'I'm Timble' part in the centre and setting the margins */
+/* Aligning 'I'm Timble' text in the center
+*/
 .about .about-content .text{
     font-size: 25px;
     font-weight: 600;
@@ -236,7 +240,8 @@ footer {
     text-align: center;
 }
 
-/* Justified paragraph, 'p', alignment */
+/* Justified paragraph
+*/
 .about .about-content p{
     text-align: justify;
 }
@@ -249,12 +254,12 @@ footer {
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 4px;
-    margin-top: -100px;
+    margin-top: -125px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
 
-                                                                   /* Styling the 'Experience' section */
+                                                                        /* Styling the 'Experience' section */
 
  /* Setting the font/size/margins for the 'name of the companies' */                                                                   
 .experience .text-ex1{
