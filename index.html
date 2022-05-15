@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="style.css">  
     <script src="https://kit.fontawesome.com/3d44e78152.js" crossorigin="anonymous"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>                          
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>               
+               
   </head>
   <body>
 
         <!-- Setting up content for 'Navbar'-->
         <nav class="navbar">
                 <div class="max-width">
-                    <div class="logo"><a href="#">Tim<span>ble</span></a></div>           
+                    <div class="logo"><a href="#">Timble</a></div>           
                     <ul class="menu">
                         <li><a href="#home">Home</a></li>                                  
                         <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience-education">Qualification</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                     <div class="menu-btn">
@@ -32,10 +33,20 @@
         <section class ="home" id="home">
             <div class="max-width">
                 <div class="home-content">
-                  <div class="text-1">Hi, my name is</div>
-                  <div class="text-2">Timble Michael</div>
-                  <div class="text-3">And I am Learning <span class="typing"></span></div>
+                  <div class="text-1">Hello, I'm</div>
+                  <div class="text-2">Timble <span>Michael</span></div>
+                  <div class="text-3">And I am Currently Learning <span class="typing"></span></div>
                   <a href="documents/Timble Michael_Resume.docx">Download CV</a>
+                </div>
+
+                <div class="home-social">
+                  <a href="https://www.linkedin.com/feed/" class="social-linkedin">
+                    <i class="fa-brands fa-linkedin fa-2xl" style="color:white"></i>
+                  </a>
+
+                  <a href="https://github.com/TimbleMichael" class="social-github">
+                    <i class="fa-brands fa-github fa-2xl" style="color:white"></i>
+                  </a>
                 </div>
             </div>
         </section>
@@ -43,95 +54,357 @@
         <!-- Setting up the content for the 'about' tab-->
         <section class ="about" id="about">
           <div class="max-width">
-              <h2 class="title">About me</h2>
+              <div class="intro" id="sub-title">My Intro</div>
+              <div class="text" id="title">About Me</div>
+
               <div class="about-content">
-                      <div class="text">I'm Timble</div>
-                      <p>
-                        I graduated with a Mechanical Engineering (Honours) degree in 2019 and during my studies I was 
-                        able to get an internship at HeliMods. After completing my studies I gained entry into the Brisbane City Council Gradute program
-                        as a Graduate Mechanical Engineer. During my time at Council I was able to work in the Transport for Brisbane and Brisbane Infrastruture division.
-                        I was fortunate enough to have managed a varity of small-medium risk projects as a graduate. After 2-years, I am now looking for a new challenge, and 
-                        pivoting from eningeering into Technology, Software and Data Science. For me it is a natural evolution as the core foundation is still problem solving. 
-                        Currently, I am studying Software Engineering through Academy Xi powered by Flatiron School. I am a motivated self-started, a great communicator and 
-                        have a thrist to learn new things.                
-                      </p>
+                      <div class="about-container container grid">
+                        <div class="about-data">
+                          <div class="about-info">
+
+                            <div class="about-box">
+                              <i class="fa-solid fa-briefcase about-icon"></i>
+                              <h3 class="about-title">Work</h3>
+                              <span class="about-subtitle">Working for Over 2-years</span>
+                            </div>
+
+                            <div class="about-box">
+                              <i class="fa-solid fa-graduation-cap about-icon"></i>
+                              <h3 class="about-title">Study</h3>
+                              <span class="about-subtitle">Studied Engineering for 4-years</span>
+                            </div>
+
+                            <div class="about-box">
+                              <i class="fa-solid fa-circle-right about-icon"></i>
+                              <h3 class="about-title">Future</h3>
+                              <span class="about-subtitle">Learn Front-End & Back-End Development, and Data Science for a Career in Technology</span>
+                            </div>               
+                          </div>
+
+                          <p class="about-description">
+                            I worked as a Mechanical Engineer for 2-years
+                          </p>
+
+                        </div>
+                      </div>
                 </div>
           </div>
       </section>
+
+      <!-- Setting up content for the 'skills' tab-->
+      <section class="skills" id="skills">
+        <div class="max-width">
+          <div class="intro" id="sub-title">My Abilities</div>
+          <div class="text" id="title">Skills</div>
+
+          <div class="skills-container container grid">
+
+            <!-- Front-End Skills -->
+
+            <div class="skills-content">
+              <h3 class="skills-title">Front-End Developer</h3>
+
+              <div class="skills-box">
+                <div class="skills-group">
+
+                  <div class="skills-data">
+                    <i class="fa-solid fa-code skills-icon"></i>
+
+                    <div>
+                      <h3 class="skills-name">HTML</h3>
+                      <span class="skills-level">Intermediate</span>
+                    </div>
+
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="fa-brands fa-css3 skills-icon"></i>
+
+                    <div>
+                      <h3 class="skills-name">CSS</h3>
+                      <span class="skills-level">Intermediate</span>
+                    </div>
+
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="fa-brands fa-js skills-icon"></i>
+
+                    <div>
+                      <h3 class="skills-name">JavaScript</h3>
+                      <span class="skills-level">Intermediate</span>
+                    </div>
+
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="fa-brands fa-git-alt skills-icon"></i>
+
+                    <div>
+                      <h3 class="skills-name">Git</h3>
+                      <span class="skills-level">Basic</span>
+                    </div>
+
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="fa-brands fa-react skills-icon"></i>
+
+                    <div>
+                      <h3 class="skills-name">React</h3>
+                      <span class="skills-level">Basic</span>
+                    </div>
+
+                  </div>
+
+
+
+             
+                </div>
+              </div>
+            </div>
+
+            <!-- Back-End Skills -->
+
+            <div class="skills-content">
+              <h3 class="skills-title">Back-End Developer</h3>
+
+              <div class="skills-box">
+                <div class="skills-group">
+
+                  <div class="skills-data">
+                    <i class="fa-brands fa-node skills-icon"></i>
+
+                    <div>
+                      <h3 class="skills-name">Node JS</h3>
+                      <span class="skills-level">Basic</span>
+                    </div>
+
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="fa-brands fa-node-js skills-icon"></i>
+
+                    <div>
+                      <h3 class="skills-name">JSON</h3>
+                      <span class="skills-level">Basic</span>
+                    </div>
+
+                  </div>
+             
+                </div>
+              </div>
+            </div>
+
+            <!-- Data Science skills -->
+
+            <div class="skills-content">
+              <h3 class="skills-title">Data Science</h3>
+
+              <div class="skills-box">
+                <div class="skills-group">
+
+                  <div class="skills-data">
+                    <i class="fa-brands fa-python skills-icon"></i>
+
+                    <div>
+                      <h3 class="skills-name">Python</h3>
+                      <span class="skills-level">Intermediate</span>
+                    </div>
+
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="fa-solid fa-book skills-icon"></i>
+
+                    <div>
+                      <h3 class="skills-name">Jupyter Notebook</h3>
+                      <span class="skills-level">Intermediate</span>
+                    </div>
+
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="fa-solid fa-table skills-icon"></i>
+
+                    <div>
+                      <h3 class="skills-name">Tableu</h3>
+                      <span class="skills-level">Basic</span>
+                    </div>
+
+                  </div>             
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+      </section>
     
     <!-- Setting up the content for the 'experience' tab-->
-    <section class ="experience" id="experience">
+    <section class ="experience-education" id="experience-education">
       <div class="max-width">
-          <h2 class="title">Experience</h2>
-          <div class="experience-content">
-                <div class="text-ex1">Brisbane City Council - Brisbane Infrastruture</div>  
-                  <div class="subtext-ex1">Graduate Mechanical Engineer &#9679 Kangaroo Point, QLD, Asutralia &#9679 Jul. 2020 - Dec. 2021 </div>
-                  <p>
-                    I graduated with a Mechanical Engineering (Honours) degree in 2019 and during my studies I was 
-                    able to get an internship at HeliMods. After completing my studies I gained entry into the Brisbane City Council Gradute program
-                    as a Graduate Mechanical Engineer. During my time at Council I was able to work in the Transport for Brisbane and Brisbane Infrastruture division.
-                    I was fortunate enough to have managed a varity of small-medium risk projects as a graduate. After 2-years, I am now looking for a new challenge, and 
-                    pivoting from eningeering into Technology, Software and Data Science. For me it is a natural evolution as the core foundation is still problem solving. 
-                    Currently, I am studying Software Engineering through Academy Xi powered by Flatiron School. I am a motivated self-started, a great communicator and 
-                    have a thrist to learn new things. 
-                  </p>
-                <div class="text-ex1">Brisbane City Council - Transport for Brisbane</div>  
-                  <div class="subtext-ex1">Graduate Mechanical Engineer &#9679 Toowong, QLD, Asutralia &#9679 Jan. 2020 - Jul. 2020 </div>
-                  <p>
-                    I graduated with a Mechanical Engineering (Honours) degree in 2019 and during my studies I was 
-                    able to get an internship at HeliMods. After completing my studies I gained entry into the Brisbane City Council Gradute program
-                    as a Graduate Mechanical Engineer. During my time at Council I was able to work in the Transport for Brisbane and Brisbane Infrastruture division.
-                    I was fortunate enough to have managed a varity of small-medium risk projects as a graduate. After 2-years, I am now looking for a new challenge, and 
-                    pivoting from eningeering into Technology, Software and Data Science. For me it is a natural evolution as the core foundation is still problem solving. 
-                    Currently, I am studying Software Engineering through Academy Xi powered by Flatiron School. I am a motivated self-started, a great communicator and 
-                    have a thrist to learn new things. 
-                  </p>
-                <div class="text-ex1">HeliMods</div>
-                  <div class="subtext-ex1">Intern Mechanical Engineer &#9679 Caloundra, QLD, Asutralia &#9679 Jun. 2018 - Dec. 2018 </div>
-                  <p>
-                    I graduated with a Mechanical Engineering (Honours) degree in 2019 and during my studies I was 
-                    able to get an internship at HeliMods. After completing my studies I gained entry into the Brisbane City Council Gradute program
-                    as a Graduate Mechanical Engineer. During my time at Council I was able to work in the Transport for Brisbane and Brisbane Infrastruture division.
-                    I was fortunate enough to have managed a varity of small-medium risk projects as a graduate. After 2-years, I am now looking for a new challenge, and 
-                    pivoting from eningeering into Technology, Software and Data Science. For me it is a natural evolution as the core foundation is still problem solving. 
-                    Currently, I am studying Software Engineering through Academy Xi powered by Flatiron School. I am a motivated self-started, a great communicator and 
-                    have a thrist to learn new things.                
-                  </p>            
+        <div class="intro" id="sub-title">My Journey</div>
+        <div class="text" id="title">Qualification</div>
+
+        <div class="qualification-container container">
+          <div class="qualification-tabs">
+            <div class="qualification-button button--flex qualification-active" data-target="#education">
+              <i class="fa-solid fa-building-columns qualification-icon"></i>
+              Education
             </div>
-      </div>
+
+            <div class="qualification-button button--flex" data-target="#work">
+              <i class="fa-solid fa-briefcase qualification-icon"></i>
+              Experience
+            </div>
+          </div>
+
+          <div class="qualification-sections">
+
+                                                  <!-- Content 1 -->
+            <div class="qualification-content qualification-active" data-content id="education">
+
+                                                  <!-- Ed. 1 -->
+                <div class="qualification-data">
+                    <div>
+                      <h3 class="qualification-title">Bachelor of Engineering (Honours) (Mechanical)</h3>
+                      <span class="qualification-subtitle">USC Sunshine Coast</span><br>
+                      <span class="qualification-location">Sippy Downs, QLD, Australia</span>
+                      <div class="qualification-calendar">
+                        <i class="fa-solid fa-calendar-days qualification-icon"></i>
+                        2015 - 2019
+                      </div>
+                  </div>
+
+                  <div>
+                    <span class="qualification-rounder"></span>
+                    <span class="qualification-line"></span>
+                  </div>
+                </div>
+                                                    <!-- Ed. 2 -->
+              <div class="qualification-data">
+                <div></div>
+
+                <div>
+                  <span class="qualification-rounder"></span>
+                  <span class="qualification-line"></span>
+                </div>
+
+                  <div>
+                    <h3 class="qualification-title">Graduate Certificate in Data Science (Applied)</h3>
+                    <span class="qualification-subtitle">University of Adelaide</span><br>
+                    <span class="qualification-location">Online</span>
+                    <div class="qualification-calendar">
+                      <i class="fa-solid fa-calendar-days qualification-icon"></i>
+                      2022 - Current
+                    </div>
+                </div>
+              </div>
+                                                    
+                                                <!-- Ed. 3 -->
+              <div class="qualification-data">
+                  <div>
+                    <h3 class="qualification-title">Software Engineering Course</h3>
+                    <span class="qualification-subtitle">Academy Xi</span> <br>
+                    <span class="qualification-location">Online</span>
+                    <div class="qualification-calendar">
+                      <i class="fa-solid fa-calendar-days qualification-icon"></i>
+                      2022 - Current
+                    </div>
+                </div>
+
+                <div>
+                  <span class="qualification-rounder"></span>
+                  <!-- <span class="qualification-line"></span> -->
+                </div>
+              </div>
+
+            </div>
+
+                                                  <!-- Content 2 -->
+
+            <div class="qualification-content" data-content id="work">
+
+                                                  <!-- Wrk. 1 -->
+                <div class="qualification-data">
+                  <div></div>
+                  <div>
+                    <span class="qualification-rounder"></span>
+                    <span class="qualification-line"></span>
+                  </div>
+                  
+                    <div>
+                      <h3 class="qualification-title">Intern Mechanical Engineer</h3>
+                      <span class="qualification-subtitle">Helimods</span><br>
+                      <span class="qualification-location">Caloundra, QLD, Australia</span>
+                      <div class="qualification-calendar">
+                        <i class="fa-solid fa-calendar-days qualification-icon"></i>
+                        June 2018 - December 2018
+                      </div>
+                  </div>
+                </div>
+                                                    <!-- Wrk 2 -->
+              <div class="qualification-data">
+                  <div>
+                    <h3 class="qualification-title">Graduate Mechanical Engineer</h3>
+                    <span class="qualification-subtitle">Brisbane City Council - Transport for Brisbane</span><br>
+                    <span class="qualification-location">Toowong, QLD, Australia</span>
+                    <div class="qualification-calendar">
+                      <i class="fa-solid fa-calendar-days qualification-icon"></i>
+                      January 2020 - July 2020
+                    </div>
+                </div>
+                <div>
+                  <span class="qualification-rounder"></span>
+                  <span class="qualification-line"></span>
+                </div>
+              </div>
+                                                  <!-- Wrk 3 -->
+              <div class="qualification-data">
+                <div></div>
+
+                <div>
+                  <span class="qualification-rounder"></span>
+                  <span class="qualification-line"></span>
+                </div>
+
+                  <div>
+                    <h3 class="qualification-title">Graduate Mechanical Engineer</h3>
+                    <span class="qualification-subtitle">Brisbane City Council - Brisbane Infrastruture</span><br>
+                    <span class="qualification-location">Kangaroo Point, QLD, Australia</span>
+                    <div class="qualification-calendar">
+                      <i class="fa-solid fa-calendar-days qualification-icon"></i>
+                      July 2020 - December 2021
+                    </div>
+                </div>
+              </div>
+
+                                                <!-- Wrk 4 -->
+
+              <div class="qualification-data">
+                <div>
+                  <h3 class="qualification-title">Customer Service Officer</h3>
+                  <span class="qualification-subtitle">Probe CX (Australian Taxation Office)</span><br>
+                  <span class="qualification-location">Maroochydore, QLD, Australia</span>
+                  <div class="qualification-calendar">
+                    <i class="fa-solid fa-calendar-days qualification-icon"></i>
+                    January 2022 - Current
+                  </div>
+              </div>
+              <div>
+                <span class="qualification-rounder"></span>
+                <!-- <span class="qualification-line"></span> -->
+              </div>
+            </div>                            
+            </div>
+          </div>
+        </div>
   </section>
 
-  <!-- Setting up the content for the 'education' tab-->
-  <section class ="education" id="education">
-    <div class="max-width">
-        <h2 class="title">Education</h2>
-        <div class="education-content">
-              <div class="text-ed2">Graduate Certificate of Data Science (Applied)</div>  
-                <div class="subtext-ed2">University of Adelaide &#9679 Online &#9679 Aug. 2022 </div>
-                <p>
-                  I graduated with a Mechanical Engineering (Honours) degree in 2019 and during my studies I was 
-                  able to get an internship at HeliMods. After completing my studies I gained entry into the Brisbane City Council Gradute program
-                  as a Graduate Mechanical Engineer. During my time at Council I was able to work in the Transport for Brisbane and Brisbane Infrastruture division.
-                  I was fortunate enough to have managed a varity of small-medium risk projects as a graduate. After 2-years, I am now looking for a new challenge, and 
-                  pivoting from eningeering into Technology, Software and Data Science. For me it is a natural evolution as the core foundation is still problem solving. 
-                  Currently, I am studying Software Engineering through Academy Xi powered by Flatiron School. I am a motivated self-started, a great communicator and 
-                  have a thrist to learn new things. 
-                </p>
-              <div class="text-ed2">Bachelor of Engineering (Honours) (Mechanical)</div>  
-                <div class="subtext-ed2">University of the Sunshine Coast &#9679 Sippy Downs &#9679 Jul. 2015 - Jun. 2019 </div>
-                <p>
-                  I graduated with a Mechanical Engineering (Honours) degree in 2019 and during my studies I was 
-                  able to get an internship at HeliMods. After completing my studies I gained entry into the Brisbane City Council Gradute program
-                  as a Graduate Mechanical Engineer. During my time at Council I was able to work in the Transport for Brisbane and Brisbane Infrastruture division.
-                  I was fortunate enough to have managed a varity of small-medium risk projects as a graduate. After 2-years, I am now looking for a new challenge, and 
-                  pivoting from eningeering into Technology, Software and Data Science. For me it is a natural evolution as the core foundation is still problem solving. 
-                  Currently, I am studying Software Engineering through Academy Xi powered by Flatiron School. I am a motivated self-started, a great communicator and 
-                  have a thrist to learn new things. 
-                </p>           
-          </div>
-    </div>
-</section>
 
+
+ 
 <!-- Setting up the content for the 'contact' tab, including icons-->
 <section class ="contact" id="contact">
   <div class="max-width">
