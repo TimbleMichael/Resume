@@ -6,6 +6,19 @@
     text-decoration: none;
 }
 
+:root {
+
+    /* hsl (hue, sat, light) */
+
+    --first-hue: 348;
+    --sat: 83%;
+    --lig: 42%;
+    
+    --primary-color: hsl(var(--first-hue), var(--sat), var(--lig));
+    --background: hsl(0,0%,0%);
+    --text-color: hsl(100,100%,100%);
+}
+
 /* Setting up how much width each section will take */
 .max-width{
     max-width: 1555px;
@@ -33,8 +46,8 @@
    Top-bottom thickness set with 'padding'.
 */
 .navbar.sticky{
-    padding: 15px 0;
-    background: crimson;
+    padding: 10px 0;
+    background: var(--primary-color);
 }
 
 /* 'navbar' to be horizontal with the 'flex' property.
@@ -48,23 +61,9 @@
 /* Setting the colour of the logo i.e. "Tim", which is the first three letter of the word to be white. 
 */
 .navbar .logo a{
-    color: #fff;
+    color: var(--primary-color);
     font-size: 35px;
     font-weight: 600; 
-}
-
-/* Setting the colour for the remainder of the logo i.e. "ble", which is the last three letter of the word to be crimson. 
-*/
-.navbar .logo a span{
-    color: crimson;
-    transition: all 0.3s ease;
-}
-
-/* The 'logo' (the last three letters) will tranisiton to white when the user is scrolling. 
-   The 'Transition' property handles this.
-*/
-.navbar.sticky .logo a span{
-    color: #fff;
 }
 
 .navbar .menu li{
@@ -75,7 +74,7 @@
 /* Setting the colour/fonts for the items in the list 
 */
 .navbar .menu li a{
-    color: #fff;
+    color: var(--text-color);
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -85,13 +84,25 @@
 /* When hovering the menu item will 'transition' to crimson 
 */
 .navbar .menu li a:hover{
-    color: crimson;
+    color: var(--primary-color);
+}
+
+.navbar.sticky .menu li a{
+    color: var(--text-color);
 }
 
 /* When scrolling (hence the 'sticky') the 'navbar' list will trnasition to white 
 */
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: black;
+}
+
+.navbar.sticky .logo a:hover{
+    color: black;
+}
+
+.navbar.sticky .logo a{
+    color: var(--text-color);
 }
 
 /* Menu button which won't be seen (display:none) until the screen  is a certain size   
@@ -111,10 +122,9 @@
 */                                                          
 .home{
     display: flex;
-    background: url("images/black-lines-4k-material-design-creative-geometric-shapes.jpg") no-repeat center;
-    background-size: 2500px 1900px;
-    height: 100vh;
-    color: #fff;
+    background-color: var(--background);
+    height: 95vh;
+    color: var(--text-color);
     min-height: 500px;
     font-family: 'Ubuntu',sans-serif;
 }
@@ -124,12 +134,13 @@
    Auto-margin was used to center the container.
 */
 .home .max-width{
-    margin: auto 0px auto 415px;
+    margin: auto 0 auto 415px;
 }
 
 /* Setting for "Hi, my name is", home (parent container) -> home-cotent (sub-container) -> text-1 (child of the sub-container)
 */
 .home .home-content .text-1{
+    margin-top: 50px;
     font-size: 27px;
 }
 
@@ -138,6 +149,10 @@
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;   
+}
+
+.home .home-content .text-2 span{
+    color: var(--primary-color);   
 }
 
 /* Setting for "And I am learning", home -> home-cotent -> text-3, setting the font-size
@@ -149,7 +164,7 @@
 /* Setting the colour and fonts for the items that I am "learning" in the list
 */
 .home .home-content .text-3 span{
-    color: crimson;
+    color: var(--primary-color);
     font-weight: 450;      
 }
 
@@ -157,87 +172,107 @@
 */
 .home .home-content a{
     display: inline-block;
-    background: crimson;
-    color: #fff;
+    color: var(--primary-color);
     font-size: 25px;
     padding: 10px 20px;
     margin-top: 20px;
     border-radius: 10px;
-    border: 1px solid crimson;
+    border: 1px solid var(--primary-color);
 }
 
 /* Colour change for "Download CV" button when hovering over it 
 */
 .home .home-content a:hover{
-    color: crimson;
-    background: none;
+    background: var(--primary-color);
+    color: white;
 }
 
+.home .home-social{
+    display: grid;
+    grid-template-columns: 45px 2px;
+    margin-top: 25px;
+}
+
+.home .home-social i:hover{
+    color: var(--primary-color) !important;
+}
 
 /* Spacing in between each section 
 */
 section{
-    padding: 100px 0;
+    padding: 75px 0;
 }
 
 /* Setting the font for the content in each section 
 */
 .about,
-.experience,
+.skills,
+.experience-education,
 .education,
 .contact,
 footer {
     font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
 }
+
+
 
                                                                         /* Styling the 'About' section */
                                                                                                                                    
 /* Setting the font, position, and alignment for the title 
 */
-.about .title{
+.about .intro,
+.skills .intro,
+.experience-education .intro{
     position: relative;
+    color: var(--text-color);
     text-align: center;
-    font-size: 40px;
     font-weight: 500;
-    margin-bottom: 25px;
-    padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* Putting in a black line underneath "About me" title 
-*/
-.about .title:before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #111;
-    transform: translate(-50%);
-}
-
-/* Putting in 'who I am' on top of the black line
-*/
-.about .title:after{
-    content: "who I am";
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    font-size: 20px;
-    color: crimson;
-    padding: 5px;
-    background: #fff;
-    transform: translate(-50%);
-}
-
-/* Aligning 'I'm Timble' text in the center
-*/
-.about .about-content .text{
-    font-size: 25px;
+.about .text,
+.skills .text,
+.experience-education .text{
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: var(--primary-color);
     font-weight: 600;
-    margin-bottom: 10px;
     text-align: center;
+}
+
+.about .about-data{
+    color: black;
+    text-align: center;
+}
+
+.about .about-content .about-description{
+    color: white;
+    text-align: center;
+}
+
+.about .about-info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.about .about-box{
+    background-color: white;
+    border-radius: .75rem;
+    padding: .75rem .5rem;
+}
+
+.about .about-icon{
+    font-size: 25px;
+}
+
+.about .about-title{
+    color: var(--primary-color);
 }
 
 /* Justified paragraph
@@ -246,10 +281,71 @@ footer {
     text-align: justify;
 }
 
-.experience .title,
+                                                        /* Styling the Skills sections */
+
+.skills .skills-icon{
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.skills .skills-name{
+    line-height: 18px;
+}
+
+.skills .grid {
+    display: grid;
+    gap:1.25rem;
+}
+
+.skills .container {
+    display: flex;
+    width: 50%;
+}
+
+
+.skills .skills-container{
+    row-gap: 1rem;
+    padding-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.skills .skills-content{
+    background-color: var(--text-color);
+    border-radius: 1.25rem;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.skills .skills-title{
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.skills .skills-box{
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+
+.skills .skills-group{
+    display: grid;
+    align-content: flex-start;
+    row-gap: 1rem;
+}
+
+.skills .skills-data{
+    display: flex;
+    column-gap: .5rem;
+}
+
 .education .title,
 .contact .title{
     position: relative;
+    color: var(--primary-color);
     text-align: center;
     font-size: 40px;
     font-weight: 500;
@@ -259,26 +355,89 @@ footer {
     font-family: 'Ubuntu', sans-serif;
 }
 
+
+
                                                                         /* Styling the 'Experience' section */
-
- /* Setting the font/size/margins for the 'name of the companies' */                                                                   
-.experience .text-ex1{
-    font-size: 25px;
-    font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: crimson;
+   
+                                                                        
+.experience-education .qualification-button, .qualification-icon{
+    color: var(--text-color);
 }
 
-/* Setting the font/size/margins for the 'position/location/start-end dates' */  
-.experience .subtext-ex1{
-    font-size: 18px;
+.experience-education .qualification-tabs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 25px;
     font-weight: 600;
-    margin-bottom: 15px;
-    margin-top: -10px;
-    text-align: center;
 }
+
+.experience-education .qualification-button{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.experience-education .qualification-icon{
+    color: var(--primary-color);
+}
+
+.experience-education .qualification-button:hover{
+    color: var(--primary-color);
+}
+
+.experience-education .qualification-title, .qualification-subtitle, .qualification-calendar{
+    color: var(--text-color);
+}
+
+
+.experience-education .qualification-data{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.experience-education .qualification-subtitle{
+    display: inline-block;
+    font-weight: 600;
+}
+
+.experience-education .qualification-location{
+    display: inline-block;
+    color: white;
+}
+
+.experience-education .qualification-rounder{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.experience-education .qualification-line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--primary-color);
+    transform: translate(6px, -7px);
+}
+
+.experience-education [data-content] {
+    display: none;
+}
+
+.qualification-active[data-content]{
+    display: block;
+}
+
+.qualification-button.qualification-active{
+    color: var(--primary-color);
+}
+
+
 
                                                                     /* Styling the 'Education' section */
 
@@ -349,7 +508,7 @@ footer span a{
     }
 }
 
-@media (max-width: 990px){
+@media screen and (max-width: 768px){
     .home .max-width{
         padding: 0 75px;
     }
