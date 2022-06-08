@@ -208,7 +208,6 @@ section{
 .about,
 .skills,
 .experience-education,
-.education,
 .contact,
 footer {
     font-family: 'Poppins', sans-serif;
@@ -223,7 +222,8 @@ footer {
 */
 .about .intro,
 .skills .intro,
-.experience-education .intro{
+.experience-education .intro,
+.contact .intro{
     position: relative;
     color: var(--text-color);
     text-align: center;
@@ -233,7 +233,8 @@ footer {
 
 .about .text,
 .skills .text,
-.experience-education .text{
+.experience-education .text,
+.contact .text{
     font-size: 40px;
     margin-bottom: 25px;
     color: var(--primary-color);
@@ -355,9 +356,10 @@ footer {
     font-family: 'Ubuntu', sans-serif;
 }
 
-
-
-                                                                        /* Styling the 'Experience' section */
+.contact .title {
+    margin-top: 1px;
+}
+                                                                        /* Styling the 'Experience/education' section */
    
                                                                         
 .experience-education .qualification-button, .qualification-icon{
@@ -438,36 +440,14 @@ footer {
 }
 
 
-
-                                                                    /* Styling the 'Education' section */
-
- /* Setting the font/size/margins for the 'name of the degree' */                                                                                                        
-.education .text-ed2{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    text-align: center;
-    color: crimson;
-}
-
-/* Setting the font/size/margins for the 'university name/location/start-end dates' */  
-.education .subtext-ed2{
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    margin-top: -10px;
-    text-align: center;
-}
-
                                                                     /* Styling the 'Contact' section */  
 
 /* Setting the font/size of the 'head' i.e. 'Name', 'Address' and 'email'  */                                                             
 .contact .head{
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 10px;
     text-align: center;
-    color: crimson;
+    color: var(--text-color);
 }
 
 /* Setting the font/size of the 'sub-title' i.e. 'timble michael', 'QLD Aus' and 'email adress'  */   
@@ -475,6 +455,16 @@ footer {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.contact .row {
+    margin-bottom: 25px;
+}
+
+.contact .contact-icon{
+    color: var(--primary-color);
     text-align: center;
 }
 
@@ -496,21 +486,27 @@ footer span a{
     color: crimson;
 }
 
-@media (max-width: 950px){
-    .max-width{
-        padding: 0 75px;
-    }
-}
-
-@media (max-width: 1329px){
+@media (max-width: 1104px){
     .home .max-width{
         margin-left: 0px;
     }
 }
 
-@media screen and (max-width: 768px){
+@media (max-width: 991px){
     .home .max-width{
-        padding: 0 75px;
+        padding: 0 50px;
+    }
+
+    .about-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+@media (max-width: 947px){
+    .max-width{
+        padding: 0 50px;
     }
 
     .menu-btn{
@@ -518,7 +514,7 @@ footer span a{
         z-index: 999;
     }
 
-    .menu-btn i.active:before{
+    .menu-btn i.active::before{
         content: "\f00d";
     }
 
@@ -526,16 +522,16 @@ footer span a{
         position: fixed;
         height: 100vh;
         width: 100%;
-        left: -100%;
+        left: 100%;
         top: 0;
         background: black;
         text-align: center;
         padding-top: 80px;
-        transition: all 0.3s ease;
     }
 
     .navbar .menu.active{
         left: 0;
+
     }
 
     .navbar .menu li{
@@ -544,8 +540,41 @@ footer span a{
 
     .navbar .menu li a{
         display: inline-block;
-        margin: 25px 0;
+        margin: 20px 0;
         font-size: 25px;
     }
 
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
 }
+
+@media (max-width: 690px){
+    .max-width{
+        padding: 0 23px;
+    }
+
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 500px){ 
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+}
+
+
