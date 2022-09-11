@@ -26,7 +26,7 @@ $(document).ready(function(){
     // Setting the 'strings' I want typed at a specific 'typeSpeed' and 'backspeed', and finally have it running in a loop (loop=true)
 
     var typed =  new Typed(".typing", {
-        strings: ["Software Engineering", "Python", "JavaScript", "HTML", "Data Science"],
+        strings: ["Ruby", "Python", "JavaScript", "HTML", "R-Studio", "HTML/CSS", "Tableau"],
         typeSpeed: 100,
         backspeed: 60,
         loop: true
